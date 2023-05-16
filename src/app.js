@@ -3,4 +3,6 @@ const express = require('express');
 
 const app = express();
 
+app.get("/", (requisicao, resposta) => resposta.status(200).json({ mensagem: "Olá Mundo!" }));
+
 module.exports = app;
